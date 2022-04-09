@@ -1,4 +1,6 @@
 const LoginPage = require('../pageobjects/login.page')
+const HomePage = require('../pageobjects/home.page')
+const { navigateToSchedulePage } = require('../pageobjects/home.page')
 
 
 describe('Planday', () => {
@@ -6,14 +8,16 @@ describe('Planday', () => {
         await LoginPage.openLoginPage()
         await LoginPage.acceptCookies()
     })
-
     it('Should not login with invalid credentials', async () => {
         await LoginPage.login('invalidUsername','invalidPassword')
         await LoginPage.checkErrorMessages()
     })
 
-    it('should login with valid credentials', async () => {
+    it('Should login with valid credentials', async () => {
         await LoginPage.login('plandayqa@outlook.com', 'APItesting21')
-        browser.pause(2400)
+    })
+
+    it('Should redirect to the schedule', async () => {
+        await navigateToSchedulePage()
     })
 })

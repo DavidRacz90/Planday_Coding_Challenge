@@ -1,4 +1,4 @@
-const Page = require('./page');
+const Page = require('./page')
 
 class LoginPage extends Page {
     /**
@@ -14,12 +14,11 @@ class LoginPage extends Page {
 
     /**
      * a method to encapsule automation code to interact with the page
-     * e.g. to login using username and password
      */
     async login (username, password) {
-        await this.usernameField.setValue(username);
-        await this.passwordField.setValue(password);
-        await this.loginButton.click();
+        await this.usernameField.setValue(username)
+        await this.passwordField.setValue(password)
+        await this.loginButton.click()
     }
     
     async checkErrorMessages () {
@@ -38,4 +37,4 @@ class LoginPage extends Page {
     }
 }
 
-module.exports = new LoginPage();
+module.exports = new LoginPage()
