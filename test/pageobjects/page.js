@@ -1,5 +1,5 @@
 module.exports = class Page {
-  open (path) {
-      browser.url(path)
-  }
+    async open () {
+        return browser.url('https://test1234.planday.com/')
+    }
 }
