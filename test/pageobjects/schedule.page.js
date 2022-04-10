@@ -14,7 +14,7 @@ class SchedulePage {
      /**
      * a method to encapsule automation code to interact with the page
      */
-    
+     
      async createShift () {
         await this.board.waitForExist()
         await this.timeSlot.click()
