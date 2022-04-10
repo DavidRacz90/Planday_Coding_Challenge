@@ -5,9 +5,9 @@ class LoginPage extends Page {
      * define selectors using getter methods
      */
      get cookieConsentButton () { return $('#cookie-consent-button')}
-     get usernameField () { return $('#Username') }
-     get passwordField () { return $('#Password') }
-     get loginButton () { return $('#MainLoginButton') }
+     get usernameField () { return $('#Username')}
+     get passwordField () { return $('#Password')}
+     get loginButton () { return $('#MainLoginButton')}
      get usernameError () { return $('#Username-validation-error')}
      get passwordError () { return $('#Password-validation-error')}
    

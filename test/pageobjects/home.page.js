@@ -1,19 +1,13 @@
-const { expect } = require("chai")
-
 class HomePage {
   /**
      * define selectors using getter methods
      */
-  get scheduleNavLink () { return $("(//a[@title='Schedule'])")}
+  get scheduleNavLink () { return $('#root > div > header > nav.sc-bqiRlB.hJGaWF > ul > li:nth-child(2) > a')}
   /**
-     * a method to encapsule automation code to interact with the page
+     * a method to encapsule automati'on code to interact with the page
      */
   async navigateToSchedulePage () {
-    await browser.waitUntil( async () => {
-      await this.scheduleNavLink.isExisting(), {
-        timeout: 15000
-      }
-    })
+    await this.scheduleNavLink.waitForExist(20000)
     await this.scheduleNavLink.click()
     await expect(browser).toHaveUrlContaining('schedule')
   }
