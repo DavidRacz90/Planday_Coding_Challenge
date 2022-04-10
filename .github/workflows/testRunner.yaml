@@ -1,4 +1,4 @@
-name: CI
+name: TestRunner
 on: [push, pull_request]
 jobs:
   build:
