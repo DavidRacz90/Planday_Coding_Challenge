@@ -4,13 +4,14 @@
     "description": "Solution for coding challenge",
     "main": "index.js",
     "scripts": {
-        "test": "wdio run wdio.conf.js",
-        "wdio": "wdio run wdio.conf.js"
+        "test:local": "wdio run wdio.local.conf.js",
+        "test:git": "wdio run wdio.git.conf.js"
     },
     "author": "Dávid Rácz",
     "license": "ISC",
     "dependencies": {
         "chai": "^4.3.6",
+        "chromedriver": "^99.0.0",
         "mocha": "^9.2.2"
     },
     "devDependencies": {

@@ -16,7 +16,7 @@ class SchedulePage {
      */
      
      async createShift () {
-        await this.board.waitForExist()
+        await this.board.waitForExist(20000)
         await this.timeSlot.click()
         await this.shiftStartFrom.setValue('09.00')
         await this.shiftEndsAt.setValue('17.00')

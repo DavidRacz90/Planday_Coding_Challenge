@@ -1,5 +1,5 @@
 name: TestRunner
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          run: npm test
+          run: npm test:git
         - uses: actions/upload-artifact@v1
           if: failure()
           with:
