@@ -11,7 +11,7 @@ class SchedulePage {
      get deleteButton () { return $('//button[contains(.,"Delete")]')}
      get editShiftBox () { return $('//div[contains(@class,"edit-shift-modal__box")]')}
      get employeeName () { return $('//div[@class="row-header3__text__title"][contains(.,"Employee")]')}
-    
+     
      /**
      * a method to encapsule automation code to interact with the page
      */
@@ -43,7 +43,6 @@ class SchedulePage {
         await this.deleteButton.click()
         await this.deleteButton.click()
     }
-
 }
 
 module.exports = new SchedulePage()
