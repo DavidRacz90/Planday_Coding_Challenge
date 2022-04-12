@@ -4,7 +4,8 @@
     "description": "Solution for coding challenge",
     "main": "./node_modules/.bin/wdio",
     "scripts": {
-        "test": "wdio run wdio.conf.js"
+        "test": "wdio run wdio.conf.js",
+        "test:git": "wdio run wdio.conf.git.js"
     },
     "author": "Dávid Rácz",
     "license": "ISC",
