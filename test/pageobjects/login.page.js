@@ -29,6 +29,7 @@ class LoginPage extends Page {
     }
 
     async acceptCookies () {
+        await this.cookieConsentButton.waitForExist({timeout:10000})
         await this.cookieConsentButton.click()
     }
 

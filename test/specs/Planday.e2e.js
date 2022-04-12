@@ -22,6 +22,7 @@ describe('Planday', () => {
     })
 
     it('Should create a new shift for Employee One', async () => {
+        await SchedulePage.countEmployees()
         await SchedulePage.createShift()
         await SchedulePage.checkIfShiftCreated()
         await SchedulePage.deleteShift()

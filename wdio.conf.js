@@ -110,6 +110,7 @@ exports.config = {
     connectionRetryCount: 3,
     //
     // Test runner services
+    services: ['chromedriver'],
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
@@ -122,7 +123,7 @@ exports.config = {
     framework: 'mocha',
     //
     // The number of times to retry the entire specfile when it fails as a whole
-    specFileRetries: 3,
+    //specFileRetries: 3,
     //
     // Delay in seconds between the spec file retry attempts
     // specFileRetriesDelay: 0,
