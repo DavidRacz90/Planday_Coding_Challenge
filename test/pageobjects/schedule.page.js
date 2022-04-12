@@ -10,7 +10,6 @@ class SchedulePage {
      get timeLine () { return $('//*[@id="container-platform-scheduling"]/div/div[2]/div[3]/div/div[2]/div[1]/div/div/div[2]/div[2]/div/div/div/div[2]')}
      get deleteButton () { return $('//button[contains(.,"Delete")]')}
      get editShiftBox () { return $('//div[contains(@class,"edit-shift-modal__box")]')}
-     get employeeName () { return $('//div[@class="row-header3__text__title"][contains(.,"Employee")]')}
      
      /**
      * a method to encapsule automation code to interact with the page
